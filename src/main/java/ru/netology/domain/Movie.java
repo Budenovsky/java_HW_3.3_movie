@@ -5,6 +5,7 @@ public class Movie {
     private String imageUrl;
     private String name;
     private String genre;
+    private boolean premiereTomorrow;
 
     public String getId() {
         return id;
@@ -37,4 +38,13 @@ public class Movie {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    public boolean isPremiereTomorrow() {
+        return premiereTomorrow;
+    }
+
+    public void setPremiereTomorrow(boolean premiereTomorrow) {
+        this.premiereTomorrow = premiereTomorrow;
+    }
+
 }
