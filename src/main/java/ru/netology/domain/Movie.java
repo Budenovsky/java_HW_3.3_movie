@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-
 public class Movie {
     private String id;
     private String imageUrl;
@@ -15,3 +14,4 @@ public class Movie {
     private String genre;
     private boolean premiereTomorrow;
 }
+

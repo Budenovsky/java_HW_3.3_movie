@@ -3,7 +3,7 @@ package ru.netology.manager;
 import ru.netology.domain.Movie;
 
 public class AfishaManager {
-
+    private int limit = 10;
     private Movie[] movies = new Movie[0];
 
     public  void add (Movie movie) {
@@ -20,14 +20,19 @@ public class AfishaManager {
     public Movie[] getAll() {
         Movie[] result = new Movie[movies.length];
         for (int i = 0; i < result.length; i++) {
+            if (i > limit - 1) {
+                i = limit - 1;
+            }
             int index = movies.length - i - 1;
             result[i] = movies[index];
         }
         return result;
     }
 
-    public void getLimit() {
-        int limitLength = 10;
+    public AfishaManager() {
+    }
 
+    public AfishaManager(int limit) {
+        this.limit = limit;
     }
 }

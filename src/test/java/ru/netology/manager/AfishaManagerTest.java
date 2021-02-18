@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AfishaManagerTest {
 
-    AfishaManager manager = new AfishaManager();
+    AfishaManager manager = new AfishaManager(1);
 
     private Movie first = new Movie();
     private Movie second = new Movie();
