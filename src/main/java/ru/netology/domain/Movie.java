@@ -1,5 +1,12 @@
 package ru.netology.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Movie {
     private String id;
     private String imageUrl;
@@ -7,44 +14,5 @@ public class Movie {
     private String genre;
     private boolean premiereTomorrow;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public boolean isPremiereTomorrow() {
-        return premiereTomorrow;
-    }
-
-    public void setPremiereTomorrow(boolean premiereTomorrow) {
-        this.premiereTomorrow = premiereTomorrow;
-    }
-
 }
+
