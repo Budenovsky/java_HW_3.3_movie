@@ -6,7 +6,7 @@ import ru.netology.domain.Movie;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AfishaManagerTestWithLimit {
-    AfishaManager manager = new AfishaManager(2);
+    AfishaManager manager = new AfishaManager();
 
     private Movie first = new Movie();
     private Movie second = new Movie();
